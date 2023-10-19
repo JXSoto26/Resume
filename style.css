@@ -1,0 +1,85 @@
+body {
+    font-family: "Arial", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0px;
+    padding: 0px,20px;
+    margin: 0%;
+  }
+
+  /* Styling for the HR element */
+  hr {
+    height: 2px; /* Adjust the height as needed */
+    width: 15%; /* Adjust the width as needed (50% means it spans half the container) */
+    background-color: #000; /* Change the color if desired */
+    margin: 10px 0; /* Add margin for spacing above and below the line */
+  }
+
+  i {
+    margin-right: 5px;
+  }
+
+  /* Left Side */
+  .left-side {
+    grid-column: 1;
+  }
+
+  /* Right Side */
+  .right-side {
+    grid-column: 2;
+  }
+
+  /* Contact Information Styling */
+  #contact-info {
+    background-color: #c1c1bbe1;
+    margin: 0;
+    padding: 47px; /* Add padding for spacing within the div */
+  }
+
+  /* Left Side Professional Information Styling */
+  #professional-info {
+    background-color: #f8f4ecfb;
+    margin: 0;
+    padding: 10px; /* Add padding for spacing within the div */
+  }
+
+  #languages {
+    background-color: #f8f4ecfb;
+    margin: 0;
+    padding: 10px;
+  }
+
+  /*Right Side Professional Summary*/
+  #summary {
+    background-color: #f8f4ecfb;
+    margin: 0;
+    padding: 43px; /* Add padding for spacing within the div */
+  }
+
+  /*Right Side Work and language sections*/
+  #work-history {
+    margin: 0;
+    padding: 43px; /* Add padding for spacing within the div */
+  }
+
+  @media (max-width: 768px) {
+    body {
+      grid-template-columns: 1fr; /* Change to a single column layout for smaller screens */
+    }
+    hr {
+        width: 100%;
+    }
+    ul {
+      list-style: none; /* Hide bullet points */
+      padding: 0; /* Remove default list padding */
+    }
+    #professional-info ul, #contact-info {
+        text-align: center;
+    }
+    .left-side {
+      grid-column: auto; /* Reset grid layout for smaller screens */
+    }
+    .right-side {
+      grid-column: auto; /* Reset grid layout for smaller screens */
+    }
+  }
